@@ -33,7 +33,7 @@ describe('Credit Card Validator form', () => {
     server.kill();
   });
 
-  test('Should valid card number', async () => {
+  test('Should valid card number:', async () => {
     await page.goto(baseUrl);
 
     const form = await page.$('.form-inline');
@@ -46,7 +46,7 @@ describe('Credit Card Validator form', () => {
     await page.waitForSelector('.form-inline .valid');
   });
 
-  test('Should invalid card number', async () => {
+  test('Should invalid card number:', async () => {
     await page.goto(baseUrl);
 
     const form = await page.$('.form-inline');
